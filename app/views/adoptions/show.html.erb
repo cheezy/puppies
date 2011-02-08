@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Puppy:</b>
+  <%= @adoption.puppy_id %>
+</p>
+
+<p>
+  <b>Cart:</b>
+  <%= @adoption.cart_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_adoption_path(@adoption) %> |
+<%= link_to 'Back', adoptions_path %>

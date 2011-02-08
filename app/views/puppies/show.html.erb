@@ -1,0 +1,16 @@
+<% if notice -%>
+  <p id='notice'><%= notice %></p>
+<% end %>
+
+<div>
+  <%= image_tag(@puppy.image_url) %>
+  <h2><%= @puppy.name %></h2>
+  <h3><%= @puppy.gender %> <%= @puppy.breed %></h3>
+  <%= sanitize @puppy.description %>
+  <div class='fees_line'>
+    <span class="fees">The fees to adopt me are <%= number_to_currency(@puppy.fees) %></span>
+    <%= button_to 'Adopt Me!', adoptions_path(:puppy_id => @puppy) %>
+  </div>
+</div>
+
+<%= link_to 'Return to List', agency_path %>

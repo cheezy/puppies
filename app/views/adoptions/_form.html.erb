@@ -1,0 +1,25 @@
+<%= form_for(@adoption) do |f| %>
+  <% if @adoption.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@adoption.errors.count, "error") %> prohibited this adoption from being saved:</h2>
+
+      <ul>
+      <% @adoption.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :puppy_id %><br />
+    <%= f.text_field :puppy_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cart_id %><br />
+    <%= f.text_field :cart_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

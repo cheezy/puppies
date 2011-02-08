@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  breed: MyString
+  description: MyString
+  gender: MyString
+  image_url: MyString
+  fees: 9.99
+
+two:
+  name: MyString
+  breed: MyString
+  description: MyString
+  gender: MyString
+  image_url: MyString
+  fees: 9.99

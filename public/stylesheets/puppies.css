@@ -1,0 +1,215 @@
+/* Global styles */
+
+#agency #notice {
+    color: #0e5c8b;
+    border: 2px solid #0e5c8b;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #b1d68a;
+    font: bold smaller sans-serif;
+}
+
+
+#agency h1 {
+    font:  150% sans-serif;
+    color: #0e5c8d;
+    border-bottom: 3px dotted #0e5c8d;
+}
+
+/* Styles for puppies/index */
+
+#puppy_list table {
+    border-collapse: collapse;
+}
+
+#puppy_list table tr td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+#puppy_list .list_image {
+    width:        60px;
+    height:       70px;
+}
+
+#puppy_list .list_description {
+    width:        60%;
+}
+
+#puppy_list .list_description dl {
+    margin: 0;
+}
+
+#puppy_list .list_description dt {
+	font-weight:  bold;
+	font-size:    larger;
+}
+
+#puppy_list .list_description dd {
+    margin: 0;
+}
+
+#puppy_list .list_actions {
+    font-size:    x-small;
+    text-align:   right;
+    padding-left: 1em;
+}
+
+#puppy_list .list_line_even {
+    background: #b1d68a;
+    color: #0e5c8d;
+}
+
+#puppy_list .list_line_even a {
+    color: #0e5c8d;
+}
+
+#puppy_list .list_line_odd {
+    background: #0e5c8d;
+    color: #b1d68a;
+}
+
+#puppy_list .list_line_odd a {
+  color: #b1d68a;
+}
+
+/* An entry in the agency catalog */
+
+#agency  .entry {
+    overflow: auto;
+    margin-top: 1em;
+    border-bottom: 1px dotted #0e5c8d;
+}
+
+#agency  .title {
+    font-size: 120%;
+    font-family: sans-serif;
+}
+
+#agency .entry img {
+    width: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.entry h2 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #0e5c8d;
+}
+
+#agency .entry h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: #0e5c8d;
+}
+
+#agency .entry p {
+    margin-top: 0.5em; 
+    margin-bottom: 0.8em; 
+}
+
+#agency .entry .fees_line {
+    margin-bottom: 0.5em;
+}
+
+#agency .entry .adopt {
+    position: relative;
+}
+
+#agency .entry  .fees {
+    color: #0e5c8d;
+    font-weight: bold;
+    margin-right: 2em;
+}
+
+/* Styles for main page */
+
+#banner {
+    background: #b1d68a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+    font: small-caps 40px/40px "Times New Roman", serif;
+    color: #0e5c8d;
+    text-align: center;
+}
+
+#banner img {
+    float: left;
+}
+
+#columns {
+    background: #0e5c8d;
+}
+
+#main {
+    margin-left: 13em;
+    padding-top: 4ex;
+    padding-left: 2em;
+    background: white;
+}
+
+#side {
+    float: left;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 12em;
+    background: #0e5c8d;
+}
+
+#side a {
+    color: #b1d68a;
+    font-size: small;
+}
+
+#agency .entry form, #agency .entry form div {
+    display: inline;
+}
+
+#agency .cart_title {
+    font: 120% bold;
+}
+
+#agency .item_price, #agency .total_line {
+    text-align: right;
+}
+
+#agency .total_line .total_cell {
+    font-weight: bold;
+    border-top: 1px solid;
+}
+
+.puppy_form fieldset {
+    background: #efe;
+}
+
+.puppy_form legend {
+    color: #b1d68a;
+    background: #0e5c8d;
+    font-family: sans-serif;
+    padding: 0.2em 1em;
+}
+
+.puppy_form label {
+    width: 5em;
+    float: left;
+    text-align: right;
+    padding-top: 0.2em;
+    margin-right: 0.1em;
+    display: block;
+}
+
+.puppy_form select, .puppy_form textarea, .puppy_form input {
+    margin-left: 0.5em;
+}
+
+.puppy_form .actions {
+    margin-left: 4em;
+}
+
+.puppy_form div {
+    margin: 0.5em 0;
+}

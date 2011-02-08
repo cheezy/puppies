@@ -1,0 +1,30 @@
+<div id="puppy_list">
+  <h1>Listing puppies</h1>
+
+  <table>
+  <% @puppies.each do |puppy| -%>
+    <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+      <td>
+        <%= image_tag(puppy.image_url, :class => 'list_image') %>
+      </td>
+
+      <td class='list_description'>
+        <dl>
+          <dt><%= puppy.name %></dt>
+          <dd><%= truncate(strip_tags(puppy.description), :length => 80) %></dd>
+        </dl>
+      </td>
+
+      <td class='list_actions'>
+        <%= link_to 'Show', puppy %><br />
+        <%= link_to 'Edit', edit_puppy_path(puppy) %><br />
+        <%= link_to 'Destroy', puppy, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<br />
+
+<%= link_to 'New Puppy', new_puppy_path %>

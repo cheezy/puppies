@@ -1,0 +1,2 @@
+module PuppiesHelper
+end
