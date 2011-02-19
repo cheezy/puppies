@@ -7,12 +7,15 @@
 
 <% @puppies.each do |puppy| -%>
   <div class='entry'>
-    <%= image_tag(puppy.image_url) %>
-    <h3><%= puppy.name %></h3>
-    <h4><%= puppy.gender %> <%= puppy.breed %></h4>
-    <div class='fees_line'>
-      <span class="fees"><%= number_to_currency(puppy.fees) %></span>
-      <%= button_to 'View Details', puppy_path(puppy) %>
-    </div>
+    <table width="100%">
+      <tr>
+        <td width="20%"><%= image_tag(puppy.image_url) %></td>
+        <td width="20%"><h3><%= puppy.name %></h3></td>
+        <td width="45%"><h4><%= puppy.breed %></h4><h4><%= puppy.gender %></h4></td>
+        <td width="15%">
+          <%= button_to 'View Details', puppy_path(puppy) %>
+        </td>
+      </tr>
+    </table>
   </div>
 <% end %>

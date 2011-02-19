@@ -154,10 +154,16 @@
     padding-right: 10px;
 }
 
+#columns {
+    background: #b1d68a;
+}
+
 #main {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 4ex;
     background: white;
     align: center;
