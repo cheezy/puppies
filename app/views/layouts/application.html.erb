@@ -11,23 +11,24 @@
   <div id='banner'>
     <%= @page_title || "Cheezy's Puppy Adoption Agency" %>
   </div>
-  
+
+  <div id="menu">
+    <%= link_to "Adopt a Puppy", agency_path %>
+    <a href="http://www...">Learn</a>
+    <a href="http://www...">Animal Shelters</a>
+    <a href="http://www...">Classifieds</a>
+    <a href="http://www...">Message Boards</a>
+    <a href="http://www...">Pet News</a>
+
+    <% if session[:user_id] -%>
+      <br />
+      <%= link_to "Adoptions", orders_path %>
+      <%= link_to "Puppies", puppies_path %>
+      <%= link_to "Users", users_path %>
+      <%= button_to 'Logout', logout_path, :method => :delete %>
+    <% end -%>
+  </div>
   <div id='columns'>
-    <div id='side'>
-      <a href="http://www...">Home</a><br />
-      <a href="http://www...">Questions</a><br />
-      <a href="http://www...">News</a><br />
-      <a href="http://www...">Contact</a><br />
-      
-      <% if session[:user_id] -%>
-        <br />
-        <%= link_to "Orders", orders_path %><br />
-        <%= link_to "Puppies", puppies_path %><br />
-        <%= link_to "Users", users_path %><br />
-        <br />
-        <%= button_to 'Logout', logout_path, :method => :delete %>
-      <% end -%>
-    </div>
     <div id='main'>
       <%= yield %>
     <div>

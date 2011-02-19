@@ -140,29 +140,27 @@
     float: left;
 }
 
-#columns {
+#menu {
     background: #0e5c8d;
+    color: #b1d68a;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#menu a{
+    color: #b1d68a;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #main {
-    margin-left: 13em;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 4ex;
-    padding-left: 2em;
     background: white;
-}
-
-#side {
-    float: left;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    width: 12em;
-    background: #0e5c8d;
-}
-
-#side a {
-    color: #b1d68a;
-    font-size: small;
+    align: center;
 }
 
 #agency .entry form, #agency .entry form div {
