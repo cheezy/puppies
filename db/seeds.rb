@@ -57,4 +57,65 @@ slate as far as training, she\'ll fit into a new home very quickly.
              :image_url => '/images/Brook.jpg',
              :fees => 34.95)
 
-             
+Puppy.create(:name => 'Topsy',
+             :breed => 'Terrier Mix',
+             :description =>
+             %{<p>
+This little girl is around 4-5 weeks old, and came in with hr mom sister, and two brothers.
+She is a typical puppy, not much more to say about that.  She is just sweet, playful,
+and is a baby.
+</p>},
+             :gender => 'Female',
+             :image_url => '/images/topsy.jpg',
+             :fees => 42)
+
+Puppy.create(:name => 'Tipsy',
+             :breed => 'Terrier Mix',
+             :description =>
+             %{<p>
+This little girl is around 4-5 weeks old, and came in with hr mom sister, and two brothers.
+She is a typical puppy, not much more to say about that.  She is just sweet, playful,
+and is a baby.
+</p>},
+             :gender => 'Female',
+             :image_url => '/images/tipsy.jpg',
+             :fees => 42)
+
+Puppy.create(:name => 'Twinkie',
+             :breed => 'Boxer/Rat Terrier Mix',
+             :description =>
+             %{<p>
+This little girl was the runt and she has tons of energy.  Twinkie is a ten week old
+youngster looking for her forever home.  Her momma is a Boxer/Rat Terrier/GSD and
+daddy is a Rat Terrier/Boston Terrier. Twinkie is a very sweet and petite little girl.
+</p>},
+             :gender => 'Female',
+             :image_url => '/images/twinkie.jpg',
+             :fees => 22.50)
+
+Puppy.create(:name => 'Ruby Sue',
+             :breed => 'Pit Bull Terrier',
+             :description =>
+             %{<p>
+Cute, fun, and ready to play!! Meet Ruby Sue.  She is a 4 month old leggy little
+red nose pit bull.  She is 20 lbs. of playful pup.  She loves tug of war, fetch walks,
+runs, and anything you're up for.  On her softer side she also enjoys long belly
+rubs on her adorable piglet belly.
+</p>},
+             :gender => 'Female',
+             :image_url => '/images/ruby_sue.jpg',
+             :fees => 52.50)
+
+Puppy.create(:name => 'Sparky',
+             :breed => 'Austrailian Cattle Dog (Blue Heeler)',
+             :description =>
+             %{<p>
+Sparky is a deaf blue heeler male pup with special needs.  He is eight weeks old,
+neutered, and already well traveled.  Sparky has such a charming personality, and
+is already learning that people are not his chew toys.
+</p>},
+             :gender => 'Male',
+             :image_url => '/images/sparky.jpg',
+             :fees => 79.99)
+
+
