@@ -1,39 +1,73 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+ ____________________________________________________________
+|                                                            |
+|    DESIGN : Jeremie Tisseau { http://web-kreation.com }    |
+|      DATE : 2007.08.31                                     |
+| COPYRIGHT : Free use if this notice is left in place       |
+|     EMAIL : webmaster@web-kreation.com                     |
+|____________________________________________________________|
+-->
+
 <head>
-  <title>Cheezy's Puppy Adoption Agency</title>
+  <title>Sally's Puppy Adoption Agency</title>
   <%= stylesheet_link_tag 'scaffold' %>
-  <%= stylesheet_link_tag 'puppies', :media => 'all' %>
+  <%= stylesheet_link_tag 'stylesheet', :media => 'all' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body id='agency'>
-  <div id='banner'>
-    <%= @page_title || "Sally's Puppy Adoption Agency" %>
-  </div>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <div id="sidebar">
+                <div id="sb_top">
+                   <div class="sb_logo">
+                      <a href="index.html" title="Home"><img src="images/logo.png" alt="Home" /></a>
+                    </div>
+                    <p>Home of the Happy Puppy</p>
+                </div>
 
-  <div id="menu">
-    <%= link_to "Adopt a Puppy", agency_path %>
-    <a href="http://www...">Learn</a>
-    <a href="http://www...">Animal Shelters</a>
-    <a href="http://www...">Classifieds</a>
-    <a href="http://www...">Message Boards</a>
-    <a href="http://www...">Pet News</a>
+                <div class="sb_content">
 
-    <% if session[:user_id] -%>
-      <br />
-      <%= link_to "Adoptions", orders_path %>
-      <%= link_to "Puppies", puppies_path %>
-      <%= link_to "Users", users_path %>
-      <%= button_to 'Logout', logout_path, :method => :delete %>
-    <% end -%>
-  </div>
-  <div id='columns'>
-    <div id='main'>
-      <%= yield %>
-    <div>
-  </div>
-  
+                  <ul id="navlist">
+                    <li><%= link_to "Adopt a Puppy", agency_path %></li>
+                    <li><a href="http://www...">Learn</a></li>
+                    <li><a href="http://www...">Animal Shelters</a></li>
+                    <li><a href="http://www...">Classifieds</a></li>
+                    <li><a href="http://www...">Message Boards</a></li>
+                    <li><a href="http://www...">Pet News</a></li>
 
+                    <% if session[:user_id] -%>
+                      <li><%= link_to "Adoptions", orders_path %></li>
+                      <li><%= link_to "Puppies", puppies_path %></li>
+                      <li><%= link_to "Users", users_path %></li>
+                      <li><%= button_to 'Logout', logout_path, :method => :delete %></li>
+                    <% end -%>
+                  </ul>
+
+               </div> <!-- /sb_content -->
+            </div> <!-- /sidebar -->
+
+
+            <!-- Top -->
+            <div id="header">
+                   <input name="search" class="search" type="text" value="Search..." />
+                   <a href="contact.php" name="Contact"><img src="images/contact.jpg"  alt="Contact" /> Contact</a>
+            </div>
+
+
+            <!-- Start main content -->
+            <div id="content">
+                <div id="intro">
+                    <div class="intro_t">
+                      <h1><span>Home of the </span>Happy Puppy</h1>
+                    </div>
+                </div> <!-- /intro -->
+                <%= yield %>
+            </div> <!-- /content -->
+        </div> <!-- /wrapper -->
+        <div class="clear">&nbsp;</div> <!-- Important! Fix the problem of height in Firefox -->
+    </div> <!-- /Container -->
 </body>
 </html>

@@ -1,0 +1,253 @@
+/***** Main Layout ****/
+#container {
+  background: url(../images/bg_top.jpg) repeat-x top left;
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  display: block;
+  width: 970px;
+  text-align: center;/* IE fix to center the page in the middle of the page*/
+  margin: 0 auto;/*center the page in Firefox*/
+}
+/**** Sidebar ****/
+
+#sidebar {
+  display: block;
+  float: left;
+  width: 290px;
+  text-align: left;
+  color: white;
+}
+
+#sb_top {
+  width: 290px;
+  height: 240px;
+  background: url(../images/sb_top.jpg) no-repeat left top;
+  color: #A8948A;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sb_logo {
+  padding-top: 67px;
+}
+
+.sb_content {
+  text-align: left;
+  padding-left: 12px;
+  width: 268px;
+}
+
+#sidebar .sb_content h2 {
+  color: #F5F1C2;
+  background: url(../images/bg_h2.jpg) repeat-x;
+  width: 253px;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  font: 1.5em Georgia, "Times New Roman", Times, serif;
+}
+
+#sidebar .sb_content p {
+  padding: 10px;
+}
+
+#sidebar .sb_content ul {
+  list-style-type: square;
+}
+/*links*/
+
+#sidebar .sb_content a {
+  color: #FFFF99;
+}
+
+#sidebar .sb_content a:hover {
+  color: #FFFF99;
+  border-bottom: 1px dotted #FFFF99;
+}
+
+#sidebar .sb_content img {
+  border: 1px solid #302723;
+  padding: 4px;
+  background-color: #443833;
+  Margin: 7px 0;
+}
+
+#sidebar .sb_content img.noborder {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  Margin: 7px 0;
+}
+
+/**** Main Menu ****/
+
+#sidebar #navlist {
+  margin: 0;/*removes indent IE and Opera*/
+  padding: 0;/*removes indent Mozilla and NN7*/
+  list-style-type: none;/*turns off display of bullet*/
+  width: 268px;
+}
+
+#sidebar #navlist a, #sidebar #navlist a:visited {
+  display: block;
+  height: 40px;
+  padding: 2px 2px 2px 24px;
+  border: none;
+  border-top: 1px solid #705A52;
+  border-bottom: 1px solid #3E322D;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;/* this value must match the height in order to center vertically the text*/
+  text-decoration: none;
+}
+
+#sidebar #navlist a:hover {
+  background-color: #443833;
+}
+
+#sidebar #navlist a.noborder, #sidebar #navlist a:visited.noborder {
+  border-bottom: none;
+}
+/*Copyright*/
+
+#sidebar .copyright {
+  display: block;
+  margin: 60px auto 40px auto;
+  width: 220px;
+  text-align: center;
+  background-color: #302723;
+  border: 1px solid black;
+  color: #877065;
+  font-size: 85%;
+}
+
+#sidebar .copyright a {
+  color: #FFFF99;
+}
+
+#sidebar .copyright a:hover {
+  color: #FFFF99;
+  border-bottom: 1px dotted #FFFF99;
+}
+/**** Header ****/
+
+#header {
+  display: block;
+  float: left;
+  clear: right;
+  width: 670px;
+  height: 40px;
+  padding-top: 15px;
+  color: white;
+  text-align: right;
+}
+
+#header a {
+  color: white;
+}
+
+#header a:hover {
+  border-bottom: 1px dotted white;
+}
+/**** Content ****/
+
+#content {
+  display: block;
+  float: left;
+  width: 670px;
+  border-top: #877065 9px solid;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#content ul li {
+  list-style: url(../images/bullet.jpg);
+}
+
+#content img {
+  border: 1px solid #D0C5BF;
+  padding: 4px;
+  background-color: #E7E1DE;
+  Margin: 15px 0;
+}
+
+#content img.alignleft {
+  display: block;
+  float: left;
+  clear: none;
+  margin: 5px 10px 5px 0;
+}
+
+#content img.alignright {
+  float: right;
+  margin: 5px 10px 0 10px;
+}
+
+#content img.noborder {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 10px;
+}
+
+#intro {
+  background: #55453E url(../images/intro.jpg) no-repeat center;
+  width: 670px;
+  height: 176px;
+}
+
+.intro_t{
+  width: 90%;
+  margin-left: 40px;
+}
+
+#intro h1 {
+  margin: 0;
+  color: white;
+  font-size: 36px;
+  border: none;
+  padding: 35px 0 0 0;
+}
+
+#intro h1 span {
+  color: #A8948A;
+}
+
+#intro h2 {
+  margin: 0;
+  padding: 0 0 15px 0;
+  color: black;
+  font-size: 18px;
+}
+
+#intro p {
+  padding: 00;
+}
+
+#introduction {
+  width: 100%;
+  background-color: #55453E;
+  height: 176px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+#introduction h1 {
+  margin: 0;
+  padding-top: 15px;
+  margin-bottom: 25px;
+}
+/*links*/
+
+#intro a, #introduction a {
+  color: #FFFF99;
+}
+
+#intro a:hover, #introduction a:hover {
+  color: #FFFF99;
+  border-bottom: 1px dotted #FFFF99;
+}

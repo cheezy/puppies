@@ -1,0 +1,167 @@
+/* import rules */
+/*
+____________________________________________________________
+|                                                            |
+|    DESIGN : Jeremie Tisseau { http://web-kreation.com }    |
+|      DATE : 2007.08.31                                     |
+| COPYRIGHT : Free use if this notice is left in place       |
+|     EMAIL : webmaster@web-kreation.com                     |
+|____________________________________________________________|
+
+ */
+
+@import url("layout.css");
+@import url("form.css");
+
+html, body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100%/1.25 arial, helvetica, sans-serif;
+  background: #443833 url(../images/bg.jpg) repeat-y top center;
+  width: 100%;
+  min-width: 970px;
+}
+/***** Common Formatting *****/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  width: 97%;
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  letter-spacing: -1px;
+  font: 2em arial, helvetica, sans-serif;
+  color: #877065;
+  background-color: transparent;
+  border-bottom: 4px solid #877065;
+}
+
+h2 {
+  padding: 10px 0 0 0;
+  color:  #443833;
+  background-color: transparent;
+  font-size: 110%;
+  letter-spacing: -1px;
+  font: 1.4em arial, helvetica, sans-serif;
+}
+
+h3 {
+  font: 1em arial, helvetica, sans-serif;
+  font-weight: bold;
+}
+
+p, ul, ol {
+  margin: 0;
+  padding: 0 0 18px 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0 0 18px 40px;
+}
+
+blockquote {
+  font-size: 1.4em;
+  color: #55453E;
+  background-color: transparent;
+  width: 400px;
+  background: url(../images/close-quote.jpg) no-repeat right bottom;
+  padding-left: 18px;
+  text-indent: -18px;
+}
+
+blockquote:first-letter {
+  background: url(../images/open-quote.jpg) no-repeat left top;
+  padding-left: 40px;
+  font: italic 2em Georgia, "Times New Roman", Times, serif;
+}
+
+
+small {
+  font-size: 0.85em;
+}
+
+img {
+  border: 0;
+}
+
+sup {
+  position: relative;
+  bottom: 0.3em;
+  vertical-align: baseline;
+}
+
+sub {
+  position: relative;
+  bottom: -0.2em;
+  vertical-align: baseline;
+}
+
+acronym, abbr {
+  cursor: help;
+  letter-spacing: 1px;
+  border-bottom: 1px dashed;
+}
+/***** Links *****/
+
+a {
+  text-decoration: none;
+  color: #0066FF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3399FF;
+}
+
+a img {
+  border: none;/*remove border for linked images*/
+}
+/***** Tables *****/
+
+table {
+  border: 0;
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+table tr td {
+  padding: 2px;
+}
+
+/***** Global Classes *****/
+
+.clear         { clear:both; }
+
+.float-left    { float:left; }
+.float-right   { float:right; }
+
+.text-left     { text-align:left; }
+.text-right    { text-align:right; }
+.text-center   { text-align:center; }
+.text-justify  { text-align:justify; }
+
+.bold          { font-weight:bold; }
+.italic        { font-style:italic; }
+.underline     { border-bottom:1px solid; }
+.highlight     { background:#ffc; }
+
+.wrap          { width:960px;margin:0 auto; }
+
+.img-left      { float:left;margin:4px 10px 4px 0; }
+.img-right     { float:right;margin:4px 0 4px 10px; }
+
+.nopadding     { padding:0; }
+.noindent      { margin-left:0;padding-left:0; }
+.nobullet      { list-style:none;list-style-image:none; }
+.noborder      { border: none; }
