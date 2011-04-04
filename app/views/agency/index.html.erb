@@ -11,7 +11,7 @@
       <div class="name"><h3><%= puppy.name %></h3></div>
       <div class="details"><h4><%= puppy.breed %></h4><h4><%= puppy.gender %></h4></div>
       <div class="view">
-        <%= button_to 'View Details', puppy_path(puppy), :method=>:get %>
+        <%= button_to 'View Details', puppy_path(puppy), :class=>'rounded_button', :method=>:get %>
       </div>
     </div>
   </div>

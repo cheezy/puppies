@@ -24,6 +24,10 @@
 .puppy_list div {
   float: left;
   margin: 3px 6px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .puppy_list img {
@@ -213,4 +217,13 @@
 
 .puppy_form div {
     margin: 0.5em 0;
+}
+
+.rounded_button {
+  padding: 9px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  color: #eee;
 }

@@ -7,7 +7,7 @@
 
 #wrapper {
   display: block;
-  width: 970px;
+  width: 969px;
   text-align: center;/* IE fix to center the page in the middle of the page*/
   margin: 0 auto;/*center the page in Firefox*/
 }
@@ -210,6 +210,7 @@
   font-size: 36px;
   border: none;
   padding: 35px 0 0 0;
+  text-shadow: 2px 2px 2px #000;
 }
 
 #intro h1 span {
