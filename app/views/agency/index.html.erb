@@ -1,4 +1,3 @@
-
 <% if notice -%>
   <p id='notice'><%= notice %></p>
 <% end %>
@@ -6,17 +5,16 @@
 <h1>Puppy List</h1>
 
 <% @puppies.each do |puppy| -%>
-  <div class='entry'>
-    <table width="100%">
-      <tr>
-        <td width="20%"><%= image_tag(puppy.image_url) %></td>
-        <td width="20%"><h3><%= puppy.name %></h3></td>
-        <td width="45%"><h4><%= puppy.breed %></h4><h4><%= puppy.gender %></h4></td>
-        <td width="15%">
-          <%= button_to 'View Details', puppy_path(puppy), :method=>:get %>
-        </td>
-      </tr>
-    </table>
+  <div class="puppy_list">
+    <div class='<%= cycle('list_line_odd', 'list_line_even') %>'>
+      <div class="image"><%= image_tag(puppy.image_url, :class => 'list_image') %></div>
+      <div class="name"><h3><%= puppy.name %></h3></div>
+      <div class="details"><h4><%= puppy.breed %></h4><h4><%= puppy.gender %></h4></div>
+      <div class="view">
+        <%= button_to 'View Details', puppy_path(puppy), :method=>:get %>
+      </div>
+    </div>
   </div>
 <% end %>
+<br clear="all" />
 <p><%= will_paginate @puppies %></p>

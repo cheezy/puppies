@@ -18,58 +18,55 @@
 
 /* Styles for puppies/index */
 
-#puppy_list table {
-    border-collapse: collapse;
+.puppy_list {
+  margin: 2px;
+}
+.puppy_list div {
+  float: left;
+  margin: 3px 6px;
 }
 
-#puppy_list table tr td {
-    padding: 5px;
-    vertical-align: top;
+.puppy_list img {
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-#puppy_list .list_image {
-    width:        60px;
-    height:       70px;
+.puppy_list .image {
+  width: 100px;
 }
 
-#puppy_list .list_description {
-    width:        60%;
+.puppy_list .name {
+  width: 120px;
 }
 
-#puppy_list .list_description dl {
-    margin: 0;
+.puppy_list .details {
+  width: 220px;
 }
 
-#puppy_list .list_description dt {
-	font-weight:  bold;
-	font-size:    larger;
-}
-
-#puppy_list .list_description dd {
-    margin: 0;
-}
-
-#puppy_list .list_actions {
+.puppy_list .list_actions {
     font-size:    x-small;
     text-align:   right;
     padding-left: 1em;
 }
 
-#puppy_list .list_line_even {
-    background: #b1d68a;
+.puppy_list .list_line_even {
+   width: 650px;
+   background: #ffcc99;
+   color: #0e5c8d;
+}
+
+.puppy_list .list_line_even a {
     color: #0e5c8d;
 }
 
-#puppy_list .list_line_even a {
-    color: #0e5c8d;
+.puppy_list .list_line_odd {
+   width: 650px;
+   background: #584340;
+   color: #b1d68a;
 }
 
-#puppy_list .list_line_odd {
-    background: #0e5c8d;
-    color: #b1d68a;
-}
-
-#puppy_list .list_line_odd a {
+.puppy_list .list_line_odd a {
   color: #b1d68a;
 }
 
