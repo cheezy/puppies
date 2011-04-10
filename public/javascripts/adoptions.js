@@ -1,34 +1,50 @@
 $(function() {
     $('#collar').live('click', function(event) {
-        if (event.target.checked) {
-            $(this).parent().parent().find('.collar-amount').first().replaceWith('<div class=\"collar-amount">$19.99</div>');
-        } else {
-            $(this).parent().parent().find('.collar-amount').first().empty();
-        };
+        handleClickEvent(event, '.collar-amount', 19.99);
     });
     
     $('#toy').live('click', function(event) {
-        if (event.target.checked) {
-            $(this).parent().parent().find('.toy-amount').first().replaceWith('<div class=\"toy-amount">$8.99</div>');
-        } else {
-            $(this).parent().parent().find('.toy-amount').first().empty();
-        };
+        handleClickEvent(event, '.toy-amount', 8.99);
     });
 
     $('#carrier').live('click', function(event) {
-        if (event.target.checked) {
-            $(this).parent().parent().find('.carrier-amount').first().replaceWith('<div class=\"carrier-amount">$39.99</div>');
-        } else {
-            $(this).parent().parent().find('.carrier-amount').first().empty();
-        };
+        handleClickEvent(event, '.carrier-amount', 39.99);
     });
 
     $('#vet').live('click', function(event) {
-        if (event.target.checked) {
-            $(this).parent().parent().find('.vet-amount').first().replaceWith('<div class=\"vet-amount">$69.99</div>');
-        } else {
-            $(this).parent().parent().find('.vet-amount').first().empty();
-        };
+        handleClickEvent(event, '.vet-amount', 69.99);
     });
 
 });
+
+var handleClickEvent = function(event, cls, price) {
+    if (event.target.checked) {
+        $(event.target).parent().parent().find(cls).first().html('$'+price);
+        increaseCartTotal(price);
+    } else {
+        $(event.target).parent().parent().find(cls).first().empty();
+        decreaseCartTotal(price);
+    };
+};
+
+var increaseCartTotal = function(amount) {
+    var priceCell = $('.total_cell').children().first();
+    var total = cartTotal(priceCell);
+    total = total + amount;
+    priceCell.html("$" + roundNumber(total, 2));
+};
+
+var decreaseCartTotal = function(amount) {
+    increaseCartTotal(-1*amount);
+};
+
+var cartTotal = function(priceCell) {
+    var priceCell = $('.total_cell').children().first();
+    var cartTotal = priceCell.html();
+    var len = cartTotal.length;
+    return parseFloat(cartTotal.substr(1, len));
+};
+
+var roundNumber = function(number, decimalPlaces) {
+    return Math.round(number * Math.pow(10, decimalPlaces)) / Math.pow(10, decimalPlaces);
+};
