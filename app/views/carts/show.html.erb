@@ -1,10 +1,12 @@
-<div class="cart_title">Your Litter</div>
+<h2>Your Litter</h2>
+
 <table>
   <%= render(@cart.adoptions) %>
 
   <tr class="total_line">
-    <td colspan="2">Total</td>
-    <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+    <td colspan="2"><h2>Total</h2></td>
+    <td class="total_cell"><h2><%= number_to_currency(@cart.total_price) %></h2></td>
+    </td>
   </tr>
 </table>
 

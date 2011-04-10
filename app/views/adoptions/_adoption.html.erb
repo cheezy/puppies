@@ -1,5 +1,8 @@
 <tr>
-  <td><%= adoption.puppy.name %>:</td>
+  <td><h3><%= adoption.puppy.name %>:</h3></td>
   <td><%= adoption.puppy.gender %> - <%= adoption.puppy.breed %></td>
   <td class="item_price"><%= number_to_currency(adoption.total_price) %></td>
+  <td>
+    <%= button_to 'Add Additional Services/Products', '/' %>
+  </td>
 </tr>
