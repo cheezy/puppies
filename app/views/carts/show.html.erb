@@ -1,12 +1,14 @@
+<%= javascript_include_tag 'adoptions' %>
+
 <h2>Your Litter</h2>
 
 <table>
   <%= render @cart.adoptions %>
 
   <tr class="total_line">
+    <td></td>
     <td colspan="2"><h2>Total</h2></td>
     <td class="total_cell"><h2><%= number_to_currency(@cart.total_price) %></h2></td>
-    </td>
   </tr>
 </table>
 
