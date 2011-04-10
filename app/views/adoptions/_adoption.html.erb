@@ -2,7 +2,28 @@
   <td><h3><%= adoption.puppy.name %>:</h3></td>
   <td><%= adoption.puppy.gender %> - <%= adoption.puppy.breed %></td>
   <td class="item_price"><%= number_to_currency(adoption.total_price) %></td>
-  <td>
-    <%= button_to 'Add Additional Services/Products', '/' %>
-  </td>
 </tr>
+<div id="additional-<%= adoption.puppy.name  %>">
+<tr>
+  <td />
+  <td><%= check_box_tag 'collar'%> Colllar & Leash ($19.99)</td>
+  <td><div id="collar-<%= adoption.puppy.name %>"></div></td>
+</tr>
+<tr>
+  <td />
+  <td><%= check_box_tag 'toy'%> Chew Toy ($8.99)</td>
+  <td><div id="toy-<%= adoption.puppy.name %>"></div></td>
+  <td></td>
+</tr>
+<tr>
+  <td />
+  <td><%= check_box_tag 'carrier'%> Travel Carrier ($39.99)</td>
+  <td><div id="carrier-<%= adoption.puppy.name %>"></div></td>
+  <td></td>
+</tr>
+<tr>
+  <td />
+  <td><%= check_box_tag 'vet'%> First Vet Visit ($69.99)</td>
+  <td><div id="vet-<%= adoption.puppy.name %>"></div></td>
+</tr>
+</div>
