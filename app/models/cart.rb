@@ -3,9 +3,7 @@ class Cart < ActiveRecord::Base
 
   def add_puppy(puppy_id)
     current_adoption = adoptions.where(:puppy_id => puppy_id).first
-    if current_adoption
-      current_adoption.quantity += 1
-    else
+    unless current_adoption
       current_adoption = Adoption.new(:puppy_id => puppy_id)
       adoptions << current_adoption
     end

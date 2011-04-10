@@ -4,6 +4,6 @@ class Adoption < ActiveRecord::Base
   belongs_to :cart
 
   def total_price
-    puppy.fees * quantity
+    puppy.fees
   end
 end
