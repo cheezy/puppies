@@ -188,11 +188,11 @@
 }
 
 .puppy_form fieldset {
-    background: #efe;
+    background: #fc9;
 }
 
 .puppy_form legend {
-    color: #b1d68a;
+    color: #eee;
     background: #0e5c8d;
     font-family: sans-serif;
     padding: 0.2em 1em;
@@ -226,4 +226,24 @@
   -khtml-border-radius: 10px;
   border-radius: 10px;
   color: #eee;
+  cursor: pointer;
+}
+.rounded_button:hover {
+  color: #fff;
+  background-color: #443833;
+  border-color: #000;
+}
+.pagination {
+  width: 98%;
+  background-color: #877065;
+  color: #aaa;
+}
+.pagination a, .pagination em, .pagination .next_page {
+  margin-left: 20px;
+}
+.pagination a {
+  color: #eee;
+}
+.cart_buttons form {
+  float: left;
 }

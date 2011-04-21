@@ -9,8 +9,9 @@
   <%= sanitize @puppy.description %>
   <div class='fees_line'>
     <span class="fees">The fees to adopt me are <%= number_to_currency(@puppy.fees) %></span>
-    <%= button_to 'Adopt Me!', adoptions_path(:puppy_id => @puppy) %>
+    <%= button_to 'Adopt Me!', adoptions_path(:puppy_id => @puppy), :class => 'rounded_button' %>
   </div>
 </div>
 
+<br />
 <%= link_to 'Return to List', agency_path %>

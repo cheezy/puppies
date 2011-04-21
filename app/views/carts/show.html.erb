@@ -12,6 +12,8 @@
   </tr>
 </table>
 
-<%= button_to 'Complete the Adoption', new_order_path, :method => :get %>
-<%= button_to 'Adopt Another Puppy', agency_path %>
-<%= button_to 'Change your mind', @cart, :method => :delete, :confirm => 'Are you sure?' %>
+<div class="cart_buttons">
+  <%= button_to 'Complete the Adoption', new_order_path, :method => :get, :class => 'rounded_button' %>
+  <%= button_to 'Adopt Another Puppy', agency_path, :class => 'rounded_button'  %>
+  <%= button_to 'Change your mind', @cart, :method => :delete, :confirm => 'Are you sure?', :class => 'rounded_button'  %>
+</div>
