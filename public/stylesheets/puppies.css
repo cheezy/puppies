@@ -189,11 +189,12 @@
 
 .puppy_form fieldset {
     background: #fc9;
+    margin-top: 10px;
 }
 
 .puppy_form legend {
     color: #eee;
-    background: #0e5c8d;
+    background: #443833;
     font-family: sans-serif;
     padding: 0.2em 1em;
 }
@@ -209,6 +210,7 @@
 
 .puppy_form select, .puppy_form textarea, .puppy_form input {
     margin-left: 0.5em;
+    color: #eee;
 }
 
 .puppy_form .actions {
@@ -219,7 +221,12 @@
     margin: 0.5em 0;
 }
 
-.rounded_button {
+.cart_buttons .rounded_button { margin-right: 4px; }
+
+#new_order input.text, #new_order input[type=text], #new_order input[type=email], #new_order textarea {
+  width: 280px;
+}
+#order_submit, .rounded_button {
   padding: 9px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
