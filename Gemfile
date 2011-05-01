@@ -15,7 +15,6 @@ group :test do
   gem 'factory_girl_rails'
 
   group :cucumber do
-    gem 'watir-webdriver'
     gem 'capybara'
     gem 'database_cleaner'
     gem 'cucumber'
