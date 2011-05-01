@@ -11,7 +11,6 @@ gem 'jquery-rails'
 
 group :test do
   gem 'rspec'
-  gem 'jasmine'
   gem 'factory_girl_rails'
 
   group :cucumber do
@@ -24,4 +23,5 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'jasmine'
 end
