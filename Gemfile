@@ -8,6 +8,7 @@ gem 'rails', '3.0.7'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'will_paginate', '>=3.0pre2'
 gem 'jquery-rails'
+gem 'rake'
 
 group :test do
   gem 'rspec'
@@ -18,6 +19,8 @@ group :test do
     gem 'database_cleaner'
     gem 'cucumber'
     gem 'cucumber-rails'
+    gem 'watir-webdriver'
+    gem 'page-object'
   end
 end
 
