@@ -200,7 +200,7 @@
 }
 
 .puppy_form label {
-    width: 5em;
+    width: 8em;
     float: left;
     text-align: right;
     padding-top: 0.2em;
@@ -219,6 +219,11 @@
 
 .puppy_form div {
     margin: 0.5em 0;
+}
+
+.field {
+  width: 630px;
+  float: left;
 }
 
 .cart_buttons .rounded_button { margin-right: 4px; }
