@@ -1,6 +1,6 @@
 Feature: Complete the adoption
 
-Scenario: Blah
+Scenario: Completing the adoption
   Given I am on the puppy adoption site
-  When I adopt a puppy
+  When I complete the adoption
   

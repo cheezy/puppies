@@ -44,7 +44,7 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        format.html { redirect_to(agency_url, :notice => 'Thank you for your order.') }
+        format.html { redirect_to(agency_url, :notice => 'Thank you for adopting a puppy.') }
       else
         format.html { render :action => "new" }
       end

@@ -2,7 +2,7 @@ Given /^I am on the puppy adoption site$/ do
   visit_page HomePage
 end
 
-When /^I adopt a puppy$/ do
+When /^I complete the adoption$/ do
   on_page HomePage do |page|
     page.adopt_puppy_number 1
   end
@@ -15,3 +15,9 @@ When /^I adopt a puppy$/ do
     page.complete_the_adoption
   end
 end
+
+
+
+
+
+
