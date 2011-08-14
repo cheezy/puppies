@@ -32,10 +32,6 @@
     <%= f.check_box :has_other_pets %>
   </div>
   <div class="field">
-    <%= f.label :other_pets_description, "Please describe" %>
-    <%= f.text_field :other_pets_description %>
-  </div>
-  <div class="field">
     <%= f.label :pay_type %>
     <%= f.select :pay_type, Order::PAYMENT_TYPES,
         :prompt => 'Select a payment method' %>
