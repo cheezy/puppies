@@ -1,5 +1,9 @@
 /* Global styles */
 
+#notice {
+	font-size: large;
+}
+
 #agency #notice {
     color: #0e5c8b;
     border: 2px solid #0e5c8b;

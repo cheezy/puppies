@@ -24,14 +24,6 @@
     <%= f.email_field :email, :size => 40 %>
   </div>
   <div class="field">
-    <%= f.label :has_children, "Do you have children?" %>
-    <%= f.check_box :has_children %>
-  </div>
-  <div class="field">
-    <%= f.label :has_other_pets, "Do you have other pets?" %>
-    <%= f.check_box :has_other_pets %>
-  </div>
-  <div class="field">
     <%= f.label :pay_type %>
     <%= f.select :pay_type, Order::PAYMENT_TYPES,
         :prompt => 'Select a payment method' %>
