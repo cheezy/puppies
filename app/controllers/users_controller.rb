@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  skip_before_filter :authorize, :only => [:index, :new]
 
   def index
     @users = User.order(:name)
