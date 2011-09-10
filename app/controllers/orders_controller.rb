@@ -65,10 +65,12 @@ class OrdersController < ApplicationController
 
   def destroy
     @order = Order.find(params[:id])
-    @order.destroy
+    adoption = @order.adoptions.first
+    adoption.delivered_on = Time.now
+    adoption.save
 
     respond_to do |format|
-      format.html { redirect_to(orders_url) }
+      format.html { redirect_to(orders_url, :notice => "Please thank #{@order.name} for the order!") }
     end
   end
 end
