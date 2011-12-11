@@ -10,7 +10,7 @@
     <div class="puppy_list">
       <div class='<%= cycle('list_line_odd', 'list_line_even') %>'>
         <div class="image"><%= image_tag(puppy.image_url, :class => 'list_image') %></div>
-        <div class="name">Adoptee: <%= order.name %></div>
+        <div class="name">Adopter: <%= order.name %></div>
         <div class="name">Puppy: <%= puppy.name %></div>
         <%= button_to "Process Puppy", order, :method => :delete, :class => 'rounded_button' %>
       </div>
