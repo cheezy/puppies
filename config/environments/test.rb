@@ -32,4 +32,13 @@ Puppies::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # configure static asset server for tests with Cache-Control for
+  # performance
+  config.serve_static_assets = true
+  config.static_cache_control = "public, max-age=3600"
+
+  # Allow pass debug_assets=true as a query parameter to load pages
+  # with unpacked
+  config.assets.allow_debug = true
 end

@@ -12,9 +12,8 @@
 
 <head>
   <title>Sally's Puppy Adoption Agency</title>
-  <%= stylesheet_link_tag 'scaffold' %>
-  <%= stylesheet_link_tag 'stylesheet', :media => 'all' %>
-  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag "application", :media => 'all' %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -23,7 +22,7 @@
             <div id="sidebar">
                 <div id="sb_top">
                    <div class="sb_logo">
-                      <a href="index.html" title="Home"><img src="/images/logo.png" alt="Home" /></a>
+                      <a href="index.html" title="Home"><%= image_tag("logo.png", :alt => "Home") %></a>
                     </div>
                     <p>Home of the Happy Puppy</p>
                 </div>
@@ -53,7 +52,7 @@
             <!-- Top -->
             <div id="header">
                    <input name="search" class="search" type="text" value="Search..." />
-                   <a href="contact.php" name="Contact"><img src="/images/contact.jpg"  alt="Contact" /> Contact</a>
+                   <a href="contact.php" name="Contact"><%= image_tag("contact.jpg", :alt => "Contact") %></a>
             </div>
 
 
