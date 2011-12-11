@@ -1,0 +1,57 @@
+/* Main Form formatting*/
+form {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+input, textarea, select {
+  font: 1em arial, helvetica, sans-serif;
+  background-color: #877065;
+  border: 1px solid #443833;
+  line-height: 1.25em;
+  padding: 0 0 0 2px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #55453E;
+  background-color: #BDADA6;
+}
+
+label {
+  cursor: pointer;
+}
+
+.errormsg {
+  display: block;
+  width: 90%;
+  color: #FFFFFF;
+  font-weight: bold;
+  background: #FF9D9D url(<%= asset_path 'stop.gif' %>) no-repeat 10px center;
+  padding: 3px 10px 3px 40px;
+  margin: 10px 0;
+  border-top: 2px solid #FF0000;
+  border-bottom: 2px solid #FF0000;
+}
+
+input.button {
+  background: url(<%= asset_path 'button.jpg' %>) repeat-x center;
+  color: white;
+  padding: 0 7px;
+  height: 23px;      
+  border: 1px solid #302723;
+}
+
+
+
+/*Search input*/
+input.search {
+  background: url(<%= asset_path 'search.jpg' %>) no-repeat;
+  border: none;
+  width: 220px;
+  height: 25px;
+  padding-left: 35px;
+  padding-top: 5px;
+  color: white;
+}
+
