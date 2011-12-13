@@ -17,7 +17,7 @@ to say she was crying for help!  She was first timid and shy and now she has reg
 her trust in people.  Maggie is very gentle and calm.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/MaggieMae.jpg',
+             :image_url => 'MaggieMae.jpg',
              :fees => 14.95)
              
 Puppy.create(:name => 'Spud',
@@ -28,7 +28,7 @@ This 2 year old handsome boy is housetrained, and loves riding in the car.  He i
 and friendly and would make a great addition to your family.
 </p>},
              :gender => 'Male',
-             :image_url => '/images/Spud.jpg',
+             :image_url => 'Spud.jpg',
              :fees => 18.75)
 
 Puppy.create(:name => 'Hanna',
@@ -42,7 +42,7 @@ would benefit from puppy obedience school.  She is also crate trained.  If you a
 in adding a new puppy to your family, please contact us to see if you are a good match.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/Hannah.jpg',
+             :image_url => 'Hannah.jpg',
              :fees => 22.99)
 
 Puppy.create(:name => 'Brook',
@@ -54,7 +54,7 @@ months old, and as you can see from her picture, she loves her toys!!  Basically
 slate as far as training, she\'ll fit into a new home very quickly.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/Brook.jpg',
+             :image_url => 'Brook.jpg',
              :fees => 34.95)
 
 Puppy.create(:name => 'Topsy',
@@ -66,7 +66,7 @@ She is a typical puppy, not much more to say about that.  She is just sweet, pla
 and is a baby.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/topsy.jpg',
+             :image_url => 'topsy.jpg',
              :fees => 42)
 
 Puppy.create(:name => 'Tipsy',
@@ -78,7 +78,7 @@ She is a typical puppy, not much more to say about that.  She is just sweet, pla
 and is a baby.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/tipsy.jpg',
+             :image_url => 'tipsy.jpg',
              :fees => 42)
 
 Puppy.create(:name => 'Twinkie',
@@ -90,7 +90,7 @@ youngster looking for her forever home.  Her momma is a Boxer/Rat Terrier/GSD an
 daddy is a Rat Terrier/Boston Terrier. Twinkie is a very sweet and petite little girl.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/twinkie.jpg',
+             :image_url => 'twinkie.jpg',
              :fees => 22.50)
 
 Puppy.create(:name => 'Ruby Sue',
@@ -103,7 +103,7 @@ runs, and anything you're up for.  On her softer side she also enjoys long belly
 rubs on her adorable piglet belly.
 </p>},
              :gender => 'Female',
-             :image_url => '/images/ruby_sue.jpg',
+             :image_url => 'ruby_sue.jpg',
              :fees => 52.50)
 
 Puppy.create(:name => 'Sparky',
@@ -115,7 +115,7 @@ neutered, and already well traveled.  Sparky has such a charming personality, an
 is already learning that people are not his chew toys.
 </p>},
              :gender => 'Male',
-             :image_url => '/images/sparky.jpg',
+             :image_url => 'sparky.jpg',
              :fees => 79.99)
 
 
