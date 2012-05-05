@@ -2,3 +2,13 @@
 
 This is an example application that I am developing to use in an ATDD course as well
 as my book.
+
+Once you download (clone) the project you will need to ensure you have all of the necessary gems.  You can do this by executing:
+
+    bundle
+
+in the puppies directlry.  After this command completes you can start the application by executing:
+
+    rails s
+
+This will start the application.  Simply point your browser at http://localhost:3000 and you should see the puppy appliation.
