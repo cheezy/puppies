@@ -64,7 +64,7 @@ class CartsController < ApplicationController
     session[:cart_id] = nil
     
      respond_to do |format|
-      format.html { redirect_to(agency_url, :notice => 'Your car is currently empty') }
+      format.html { redirect_to(agency_url, :notice => 'Your cart is currently empty') }
     end
   end
 end
