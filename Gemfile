@@ -11,7 +11,7 @@ gem 'ffi', '1.0.9'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'will_paginate'
-gem 'jquery-rails'
+gem 'jquery-rails', '2.0.3'
 
 group :assets do
   gem 'sass-rails', '~> 3.2.4'
