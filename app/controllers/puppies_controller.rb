@@ -6,6 +6,7 @@ class PuppiesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render :json => @puppies }
     end
   end
 
@@ -14,6 +15,7 @@ class PuppiesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
+      format.json { render :json => @puppy }
     end
   end
 
