@@ -29,6 +29,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
+      format.json { render :json => @order }
     end
   end
 
@@ -45,6 +46,7 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         format.html { redirect_to(agency_url, :notice => 'Thank you for adopting a puppy!') }
+        format.json { render :json => @order }
       else
         format.html { render :action => "new" }
       end

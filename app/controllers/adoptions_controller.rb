@@ -42,6 +42,7 @@ class AdoptionsController < ApplicationController
     respond_to do |format|
       if @adoption.save
         format.html { redirect_to(@adoption.cart) }
+        format.json { render :json => @adoption }
       else
         format.html { render :action => "new" }
       end
