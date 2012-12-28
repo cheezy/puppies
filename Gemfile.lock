@@ -72,6 +72,7 @@ GEM
     page-object (0.8.1)
       selenium-webdriver (>= 2.27.2)
       watir-webdriver (>= 0.6.2)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -156,6 +157,7 @@ DEPENDENCIES
   jquery-rails
   json_pure
   page-object
+  pg
   rails (= 3.2.1)
   rspec
   rspec-rails
