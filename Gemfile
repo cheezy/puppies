@@ -30,5 +30,8 @@ group :test do
   gem 'page-object'
   gem 'rspec'
   gem 'cucumber'
+  gem 'data_magic'
+  gem 'fig_newton'
+  gem 'require_all'
 end
 
