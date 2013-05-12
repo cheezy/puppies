@@ -4,4 +4,5 @@ log/*.log
 tmp/**/*
 db/schema.rb
 .sass-cache/
+.idea/
 
