@@ -1,9 +1,0 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  puppy_id: 1
-  cart_id: 1
-
-two:
-  puppy_id: 1
-  cart_id: 1
