@@ -33,6 +33,7 @@ group :test do
   gem 'data_magic'
   gem 'fig_newton'
   gem 'require_all'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'factory_girl'
 end
 

@@ -6,7 +6,7 @@ RSpec::Matchers.define :have_errors_on do |attribute|
   match do |model|
     model.valid?
 
-    @has_errors = model.errors.key?(attribute)
+    @has_errors = model.errors.has_key?(attribute)
 
     if @message
       @has_errors && model.errors[attribute].include?(@message)

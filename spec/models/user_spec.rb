@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe User do
-  let(:user) { Factory.build :user }
+  let(:user) { FactoryGirl.build :user }
   
   describe "validations" do
     it "should be valid" do
@@ -14,7 +14,7 @@ describe User do
     end
     
     it "should ensure two users do not have the same name" do
-      Factory(:user)
+      FactoryGirl.create(:user)
       user.should have_errors_on(:name).with_message("has already been taken")
     end
     

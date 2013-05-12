@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Puppy do
-  let(:puppy) { Factory.build :puppy }
+  let(:puppy) { FactoryGirl.build :puppy }
 
   describe "validations" do
     it "should be valid" do

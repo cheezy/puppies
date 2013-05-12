@@ -1,6 +1,9 @@
 
-Factory.define :user do |f|
-  f.name 'Joe'
-  f.hashed_password 'pass'
-  f.salt 'salt'
+FactoryGirl.define do
+  factory :user do
+    name 'Joe'
+    hashed_password 'pass'
+    salt 'salt'
+  end
 end
+

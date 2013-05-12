@@ -62,6 +62,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.1.0)
+      activesupport (>= 3.0.0)
     faker (1.1.2)
       i18n (~> 0.5)
     ffi (1.8.1)
@@ -178,6 +180,7 @@ DEPENDENCIES
   cucumber
   cucumber-rails
   data_magic
+  factory_girl
   ffi
   fig_newton
   jquery-rails
