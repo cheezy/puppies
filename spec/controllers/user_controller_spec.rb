@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe UsersController do
   before(:each) do
     UsersController.skip_before_filter :authorize

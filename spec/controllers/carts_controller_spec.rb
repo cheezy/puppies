@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe CartsController do
   
   def mock_cart(stubs={})

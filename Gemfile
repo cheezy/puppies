@@ -37,6 +37,7 @@ group :test do
   gem 'factory_girl'
   gem 'guard-spork'
   gem 'guard-rspec'
+  gem 'guard-cucumber'
   gem 'growl'
 end
 
