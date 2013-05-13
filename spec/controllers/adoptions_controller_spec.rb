@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe AdoptionsController do
 
   def mock_adoption(stubs={})

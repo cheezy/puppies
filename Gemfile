@@ -35,5 +35,8 @@ group :test do
   gem 'require_all'
   gem 'cucumber-rails', :require => false
   gem 'factory_girl'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'growl'
 end
 

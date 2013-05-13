@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe AgencyController do
 
   def mock_puppy(stubs={})

@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Puppy do
   let(:puppy) { FactoryGirl.build :puppy }
 

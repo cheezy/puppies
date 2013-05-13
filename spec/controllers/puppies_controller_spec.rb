@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe PuppiesController do
   before(:each) do
     PuppiesController.skip_before_filter :authorize
