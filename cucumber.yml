@@ -1,5 +1,4 @@
 default: --no-source --tags ~@not_ready --tags ~@javascript
 wip: --no-source --tags @wip
 js: --no-source --tags @javascript
-autotest: --no-source --color --format pretty --tags ~@not_ready
 guard: --no-source --format pretty --tags @focus --drb
