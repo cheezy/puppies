@@ -1,6 +1,10 @@
 @wip
 Feature: Behavior of the Checkout page
 
+  We need to collect information about the adoptee so
+  we can process the adoption and deliver the puppy to
+  their new loving home.
+
   Background:
     Given I am ready to checkout
 
