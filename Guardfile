@@ -7,10 +7,9 @@ guard 'spork' do
   watch('Gemfile')
   watch('Gemfile.lock')
   watch('spec/spec_helper.rb') { :rspec }
-  watch(%r{features/support/}) { :cucumber }
 end
 
-guard :rspec, :all_on_start => true, :cli => '--color --format nested --drb' do
+guard :rspec, :all_on_start => false, :all_after_pass => false, :cli => '--color --format nested --drb' do
   watch('spec/spec_helper.rb')  { "spec" }
   watch('config/routes.rb')                           { "spec/routing" }
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
@@ -22,8 +21,10 @@ guard :rspec, :all_on_start => true, :cli => '--color --format nested --drb' do
   watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
 end
 
-guard 'cucumber', :cli => '--profile guard' do
+guard 'cucumber', :all_on_start => false, :all_after_pass => false, :cli => '--profile guard' do
   watch(%r{^features/.+\.feature$})
   watch(%r{^features/support/.+$})          { 'features' }
   watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
+  watch(%r{^app/(.+)\.rb$})                           { 'features' }
+  watch(%r{^app/(.*)(\.erb|\.haml)$})                 { 'features' }
 end
