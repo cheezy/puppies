@@ -4,6 +4,8 @@ guard 'spork' do
   watch('config/environment.rb')
   watch('config/environments/test.rb')
   watch(%r{^config/initializers/.+\.rb$})
+  watch('config/routes.rb')
+  watch(%r{^spec/factories/.+\.rb$})
   watch('Gemfile')
   watch('Gemfile.lock')
   watch('spec/spec_helper.rb') { :rspec }
