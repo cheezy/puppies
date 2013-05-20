@@ -27,7 +27,7 @@ Feature: Behavior of the Checkout page
     Then I should see the error message "Address can't be blank"
 
   Scenario: Email is required
-    When I attempt to checkout without and email
+    When I attempt to checkout without an email
     Then I should see the error message "Email can't be blank"
 
   Scenario: Valid forms of payment
