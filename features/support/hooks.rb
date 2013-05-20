@@ -5,5 +5,6 @@ Before do
 end
 
 After do
+  sleep 3
   @browser.close
 end
