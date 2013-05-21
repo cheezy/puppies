@@ -1,11 +1,11 @@
 @wip
 Feature: Behavior of the Checkout page
 
-  We need to collect information about the adoptee so
+  We need to collect information about the adopter so
   we can process the adoption and deliver the puppy to
-  their new loving home.
+  their new loving owner.
 
-  There are a couple of technical requirements as well.  
+  There are a couple of technical requirements:  
   * If somebody tries to go directly to the checkout page
     without adding a puppy to their cart then they should
     be redirected to the home page
