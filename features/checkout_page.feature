@@ -5,15 +5,6 @@ Feature: Behavior of the Checkout page
   we can process the adoption and deliver the puppy to
   their new loving owner.
 
-  There are a couple of technical requirements:  
-  * If somebody tries to go directly to the checkout page
-    without adding a puppy to their cart then they should
-    be redirected to the home page
-  * The user's session should be cleared after the completion
-    of the checkout process
-  * The user's cart should be emptied after the completion
-    of the checkout process
-
   Background:
     Given I am ready to checkout
 
