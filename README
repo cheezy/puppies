@@ -13,10 +13,17 @@ in the puppies directlry.  After this command completes you can start the applic
 
 This will start the application.  Simply point your browser at http://localhost:3000 and you should see the puppy appliation.
 
-If you would like to populate the database with some sample puppies, you can execute the following command:
+If you would like to populate the database with some sample puppies, you can execute the following commands:
 
     rake db:seed
 
-This will populate the database with a few sample puppies.  
+    rake db:migrate
+
+This will populate the database with a few sample puppies. You may need run theese commands with bundle exec as:
+
+    bundle exec rake db:seed
+    bundle exec rake db:migrate  
+
+
 Note:  If you had already executed the 'rails s', you may want to stop it by pressing Control-C before you seed the database.
 When the rake command completes, execute 'rails s' again to start the server again.
