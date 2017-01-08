@@ -3,7 +3,7 @@ class CreatePuppies < ActiveRecord::Migration
     create_table :puppies do |t|
       t.string :name
       t.string :breed
-      t.string :description
+      t.text :description
       t.string :gender
       t.string :image_url
       t.decimal :fees, :precision => 8, :scale => 2
